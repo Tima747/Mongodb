@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            display: inline;
+            margin: 0 15px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Добро пожаловать на сайт продаж!</h1>
+    <nav>
+        <ul>
+            <li><a href="/sales">Просмотр продаж</a></li>
+            <li><a href="/predict?date=2024-12-01">Прогноз спроса</a></li>
+            <li><a href="/manage_stock">Управление запасами</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

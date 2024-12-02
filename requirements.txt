@@ -1,0 +1,9 @@
+pandas
+numpy
+pymongo
+prophet
+matplotlib
+fastapi
+nest-asyncio
+uvicorn
+requests

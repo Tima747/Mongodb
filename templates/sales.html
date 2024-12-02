@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Данные продаж</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <h1>Данные продаж</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Название товара</th>
+                <th>Объем продаж</th>
+                <th>Запасы</th>
+                <th>Цена</th>
+                <th>Клиенты</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in sales_data %}
+            <tr>
+                <td>{{ record.product_name }}</td>
+                <td>{{ record.sales_volume }}</td>
+                <td>{{ record.stock }}</td>
+                <td>{{ record.price }}</td>
+                <td>{{ record.client }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
